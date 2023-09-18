@@ -15,6 +15,8 @@ $ sudo gem install sass
 
 $ sass -v
  ```
+### Herramienta: 
+Para realizar los ejercicios se puede usar la herramienta: https://www.sassmeister.com/
 
 ## Variables
 ```ruby 
