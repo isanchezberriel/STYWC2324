@@ -22,6 +22,9 @@ Para realizar los ejercicios se puede usar la herramienta: https://www.sassmeist
 ```ruby 
 $nombre: valor
  ```
+### Ámbito:
+El ámbito de las variables, es el del nivel en el que esté incluida. Las variables al inicio son globales. Las variables anidadas se pueden convertir a globales con !
+
  ## Operadores
 * Matemáticos: 
 ```ruby 
