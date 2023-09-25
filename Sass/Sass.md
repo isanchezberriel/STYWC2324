@@ -22,6 +22,12 @@ Para realizar los ejercicios se puede usar la herramienta: https://www.sassmeist
 ```ruby 
 $nombre: valor
  ```
+## Listas
+Sass permite definir las listas de varias maneras: 
+** Conjunto de valores separados por , ó espacios. 
+** Conjunto de valores entre paréntesis separados por , ó espacios.
+** Conjunto de valores entre corchetes separados por espacios
+
 ### Ámbito:
 El ámbito de las variables, es el del nivel en el que esté incluida. Las variables al inicio son globales. Las variables anidadas se pueden convertir a globales con !
 
