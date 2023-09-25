@@ -36,7 +36,7 @@ El ámbito de las variables, es el del nivel en el que esté incluida. Las varia
 ```
  ## Anidamiento
 
-Sass permite anidar selectores como en HTML. Simplificar sintaxis de propiedades con el mismo prefijo mediante anidamiento. 
+Sass permite anidar selectores como en HTML. También se puede simplificar la sintaxis de propiedades con el mismo prefijo mediante anidamiento. 
 ```ruby
 prefijo
 {
