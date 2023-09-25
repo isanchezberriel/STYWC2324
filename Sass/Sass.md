@@ -44,6 +44,35 @@ prefijo
 	sufijo2: valor2
 }
 ```
+```ruby
+ul {
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+### Resultado:
+```ruby
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+ul a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+```
 ## Organización del código:
 
 ### Mixings
