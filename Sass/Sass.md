@@ -23,11 +23,11 @@ Para realizar los ejercicios se puede usar la herramienta: https://www.sassmeist
 $nombre: valor
  ```
 ## Listas 
-
 Sass permite definir las listas de varias maneras: 
 * Conjunto de valores separados por , ó espacios. 
 * Conjunto de valores entre paréntesis separados por , ó espacios.
 * Conjunto de valores entre corchetes separados por espacios
+Acceso a un elemento:  nth($list_name, index);
 ```ruby
 $list-1: "Segoe UI",sans-serif;
 $list-2: 10px 12px 10px 20px;
@@ -42,6 +42,7 @@ $nth3 nth($list_name, index);
 ## Mapas 
 * Un mapa es similar a una lista pero que admite indexación clave:valor
 * Sintaxis: $map_name: ("key":value, "key":value);
+* Acceso a un elemento: map-get(map_name, key);
 ```ruby
 $font-weight: ("light": 300, "regular": 400, "bold": 700);
 ```
@@ -200,7 +201,39 @@ quote(string), str-length(string), str-index(string, substring), to-lower-case(s
 ```ruby
 abs(number), ceil(number), comparable(num1, num2), max(number...), ...
 ```
+## Sentencias de Control
 
+### if-else
+``` ruby 
+@if condition-1 {
+  //Se ejecuta el código
+  //si la condición es verdadera
+}
+@else if condition-2 {
+  // si no, se evalúa condición 2
+  // se ejectua esta regla si condición 2 es verdadera
+}
+@else if condition-3 {
+  // ---
+}
+```
+### Bucles: @for @each @while
+``` ruby 
+@for $counter from number through number {
+  // código a ejecutar en cada iteración
+}
+```
+``` ruby 
+@while condition {
+  // código a ejecutar en cada iteración
+  //si se cumple condition
+}
+```
+``` ruby 
+@each temp_variable in list {
+  // código a ejecutar para 
+  //cada valor en la lista
+```
 ## Ejercicios
 
 1. Instalar Sass en la máquina del pool TWFE
