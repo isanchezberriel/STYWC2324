@@ -28,6 +28,13 @@ Sass permite definir las listas de varias maneras:
 * Conjunto de valores separados por , ó espacios. 
 * Conjunto de valores entre paréntesis separados por , ó espacios.
 * Conjunto de valores entre corchetes separados por espacios
+```ruby
+$list-1: "Segoe UI",sans-serif;
+$list-2: 10px 12px 10px 20px;
+$list-3: ("Segoe UI",sans-serif);
+$list-4: (10px 12px 10px 20px);
+$list-5: [grid-line1 grid-line2];
+```
 
 ### Ámbito:
 El ámbito de las variables, es el del nivel en el que esté incluida. Las variables al inicio son globales. Las variables anidadas se pueden convertir a globales con !
