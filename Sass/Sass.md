@@ -234,6 +234,103 @@ abs(number), ceil(number), comparable(num1, num2), max(number...), ...
   // código a ejecutar para 
   //cada valor en la lista
 ```
+## Ejemplo
+``` ruby 
+@for $i from 1 to 4 {
+ .font-size-#{$i} {
+      font-size: #{$i}px;
+    line-height: #{$i + 2}px;
+}
+  
+}
+
+```
+
+## Resultado
+``` ruby 
+.font-size-1 {
+  font-size: 1px;
+  line-height: 3px;
+}
+
+.font-size-2 {
+  font-size: 2px;
+  line-height: 4px;
+}
+
+.font-size-3 {
+  font-size: 3px;
+  line-height: 5px;
+}
+```
+## Ejemplo:
+``` ruby 
+$font-size: 16;
+
+@while $font-size <= 24 {
+
+  .font-size-#{$font-size} {
+    font-size: #{$font-size}px;
+    line-height: #{$font-size + 2}px;
+  }
+
+  $font-size: $font-size + 3;
+}
+
+```
+## Resultado
+``` ruby 
+.font-size-16 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font-size-19 {
+  font-size: 19px;
+  line-height: 21px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+  line-height: 24px;
+}
+```
+## Ejemplo:
+``` ruby 
+$font-sizes: (16, 18, 20, 22);
+
+@each $size in $font-sizes {
+
+  .font-size-#{$size} {
+    font-size: #{$size}px;
+    line-height: #{$size + 2}px;
+  }
+}
+```
+## Resultado
+``` ruby 
+.font-size-16 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+  line-height: 24px;
+}
+```
+
+
 ## Ejercicios
 
 1. Instalar Sass en la máquina del pool TWFE
