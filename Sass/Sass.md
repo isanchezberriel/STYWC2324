@@ -39,6 +39,13 @@ $list-5: [grid-line1 grid-line2];
 $list-2: 10px 12px 10px 20px;
 $nth3 nth($list_name, index);
 ```
+## Mapas 
+* Un mapa es similar a una lista pero que admite indexación clave:valor
+* Sintaxis: $map_name: ("key":value, "key":value);
+```ruby
+$font-weight: ("light": 300, "regular": 400, "bold": 700);
+```
+
 ### Ámbito:
 El ámbito de las variables, es el del nivel en el que esté incluida. Las variables al inicio son globales. Las variables anidadas se pueden convertir a globales con !
 
