@@ -132,6 +132,30 @@ ul {
 Se utiliza para recursos css: ``` @import ``` 
 No supone peticiones adicionales al servidor, se transpila todo el código en el css junto con el código Sass del fichero que lo contiene.
 
+### Ejemplo:
+```ruby
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.error--serious {
+  @extend .error;
+  border-width: 3px;
+}
+```
+### Resultado:
+```ruby
+.error, .error--serious {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+.error--serious {
+  border-width: 3px;
+}
+```
+
 ### Herencia
 Se usa para estilos que son compartidos, en su mayoría, y que se aplican con alguna diferencia según qué elemento:
 * Declarar el estilo base 
