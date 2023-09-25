@@ -75,6 +75,27 @@ ul a {
   text-decoration: none;
 }
 ```
+### Ejemplo:
+```ruby
+.alert, .warning {
+  ul, p {
+    margin: {
+    right: 0;
+    left: 0;
+    }
+    padding-bottom: 0;
+  }
+}
+```
+### Resultado:
+```ruby
+.alert ul, .alert p, .warning ul, .warning p {
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+```
+Experimenta a eliminar los : después de margin
 ## Organización del código:
 
 ### Mixings
