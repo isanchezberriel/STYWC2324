@@ -108,7 +108,26 @@ Crear fragmentos de código
 } 
 ```
 Se utilizan con ```@include```
+### Ejemplo:
+```ruby
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+ul {
+  @include list-reset;
+}
+```
+### Resultado:
+```ruby
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+```
 ### Import
 Se utiliza para recursos css: ``` @import ```
 
