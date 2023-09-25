@@ -132,6 +132,11 @@ ul {
 Se utiliza para recursos css: ``` @import ``` 
 No supone peticiones adicionales al servidor, se transpila todo el código en el css junto con el código Sass del fichero que lo contiene.
 
+### Herencia
+Se usa para estilos que son compartidos, en su mayoría, y que se aplican con alguna diferencia según qué elemento:
+* Declarar el estilo base 
+* Incorporarlo en el estilo que hereda con ``` @extend ```
+* También se puede usar con ```%nombre_estilo```
 ### Ejemplo:
 ```ruby
 .error {
@@ -155,13 +160,6 @@ No supone peticiones adicionales al servidor, se transpila todo el código en el
   border-width: 3px;
 }
 ```
-
-### Herencia
-Se usa para estilos que son compartidos, en su mayoría, y que se aplican con alguna diferencia según qué elemento:
-* Declarar el estilo base 
-* Incorporarlo en el estilo que hereda con ``` @extend ```
-* También se puede usar con ```%nombre_estilo```
-
 ## Funciones
 * Color: set, get o manipulación
 ```ruby
