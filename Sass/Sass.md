@@ -129,7 +129,8 @@ ul {
 }
 ```
 ### Import
-Se utiliza para recursos css: ``` @import ```
+Se utiliza para recursos css: ``` @import ``` 
+No supone peticiones adicionales al servidor, se transpila todo el código en el css junto con el código Sass del fichero que lo contiene.
 
 ### Herencia
 Se usa para estilos que son compartidos, en su mayoría, y que se aplican con alguna diferencia según qué elemento:
