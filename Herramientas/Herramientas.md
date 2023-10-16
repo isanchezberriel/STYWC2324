@@ -19,7 +19,7 @@ Crear un fichero de automatización de tareas en el que se prueben lo que se ha 
 - Hacer sourcesmaps del css
 - Lance BrowserSync
 - Investigar sobre paquetes para minificar imágenes y js. Automatizarlo.
-- Investigar la creación de un proyecto Yeoman para Jekyl.
+- Investigar la creación de un proyecto Yeoman para .
 
 ## Códigos de ejemplo 
 
