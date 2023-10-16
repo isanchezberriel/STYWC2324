@@ -1,1 +1,60 @@
+# Tecnologías Web: Cliente
+## Herramientas de desarrollo en el lado del Cliente.
 
+- VS Code - Live Server
+- Navegador
+- Gestión de paquetes: *npm*, *brower*
+- Control de versiones: *Git*
+- Generación del proyecto:  *Yeoman*
+- Automatización de tareas *Gulp*, *Grunt*
+
+
+## Actividades:
+Realizar un proyecto web de prueba para experimentar con las herramientas que se han visto. El proyecto debe incluir un fichero index.html, 2 ficheros css, y un fichero de scripts .js.
+Crear un repositorio para la práctica. Tener en cuenta los ficheros que deben ser ignorados.
+Crear la estructura del proyecto de forma automática.
+Crear un fichero de automatización de tareas en el que se prueben lo que se ha explicado:
+- Concatenar los dos ficheros css
+- Minificar css, 
+- Hacer sourcesmaps del css
+- Lance BrowserSync
+- Investigar sobre paquetes para minificar imágenes y js. Automatizarlo.
+- Investigar la creación de un proyecto Yeoman para Jekyl.
+
+## Códigos de ejemplo 
+
+### Yeoman
+`npm install -g yo //instalar yeoman`    
+`npm install -g generator-webapp       // Instalar el generador`  
+`mkdir /home/tuUsuario/nuevoProyecto  // Crear la carpeta del proyecto`  
+`cd /home/tuUsuario/nuevoProyecto      // Entrar en la carpeta proyecto`  
+`yo webapp`
+
+### Gulp
+```javascript
+var gulp = require('gulp');
+var concatCss = require('gulp-concat-css'); //paquete a utilizar
+
+gulp.task(“default”, function() { //tarea por defecto
+gulp.src('./src/html/*.*').pipe(gulp.dest('dist'));
+gulp.src('./src/css/*.*').pipe(concatCss("super.css")).pipe(gulp.dest('dist'));
+gulp.src("./src/js/*.*").pipe(gulp.dest("dist"));
+});
+```
+#### Minify Css
+`npm install --save-dev gulp-minify-css`    
+`var gulp = require('gulp');`  
+`var browserSync = require('browser-sync').create();`  
+`var minifyCss = require('gulp-minify-css);`  
+
+`gulp.task('styles', function(){`  
+`gulp.src(['src/styles/**/*.css'])`  
+`.pipe(minifyCss())`  
+`.pipe(gulp.dest.('dist/styles'))`  
+`.pipe(browserSync.stream());`  
+`});`  
+`gulp.task('default', function(){`  
+`browserSync.init({`  
+`server:'./'});`  
+`gulp.watch('*.html', browserSync.reload);`  
+`});` 
