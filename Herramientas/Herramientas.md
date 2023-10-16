@@ -10,7 +10,7 @@
 
 
 ## Actividades:
-Realizar un proyecto web de prueba para experimentar con las herramientas que se han visto. El proyecto debe incluir un fichero index.html, 2 ficheros css, y un fichero de scripts .js.
+Realizar un proyecto web de prueba para experimentar con las herramientas que se han visto. El proyecto debe incluir un fichero index.html, 2 ficheros css, y un fichero de scripts .js. Debe ser generado como una aplicación web básica con Yeoman.
 Crear un repositorio para la práctica. Tener en cuenta los ficheros que deben ser ignorados.
 Crear la estructura del proyecto de forma automática.
 Crear un fichero de automatización de tareas en el que se prueben lo que se ha explicado:
