@@ -2,4 +2,4 @@
 Repositorio de la asignatura Sistemas y Tecnologías Web Cliente.
 
 ## [Introducción a Sass](https://github.com/isanchezberriel/STYWC2324/blob/main/Sass/Sass.md)
-## [Introducción a Gul](https://github.com/isanchezberriel/STYWC2324/blob/main/Sass/Sass.md)
+## [Introducción a Gulp](https://github.com/isanchezberriel/STYWC2324/blob/main/Sass/Sass.md)
