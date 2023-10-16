@@ -67,4 +67,14 @@ gulp.src("./src/js/*.*").pipe(gulp.dest("dist"));
 ## Instalar parcel:
 `npm install parcel-bundler -g` 
 Puedes utilizar la herramienta: [CreateApp](https://createapp.dev/) como generador del proyecto.
-
+## Parcel en github-pages
+/repo-name/ debe ser reemplazado por el nombre del repositorio. Se debe tener instalado en el proyecto ```gh-pages```
+```javascript
+{
+  "scripts": {
+    "start": "parcel serve -d dist src/index.html",
+    "build": "parcel build -d build --public-url /repo-name/ src/index.html",
+    "deploy": "gh-pages -d build"
+  }
+}
+```
