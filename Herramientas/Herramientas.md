@@ -66,3 +66,5 @@ gulp.src("./src/js/*.*").pipe(gulp.dest("dist"));
 `});` 
 ## Instalar parcel:
 `npm install parcel-bundler -g`
+Puedes utilizar la herramienta: [CreateApp](https://createapp.dev/) como generador del proyecto.
+
